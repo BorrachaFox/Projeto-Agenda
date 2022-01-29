@@ -25,7 +25,7 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 
 const sessionOptions = session({
   secret: 'ajhsdjhakslddkhjas',
-  store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
+  store: new MongoStore({ mongoUrl: process.env.CONNECTIONSTRING }),
   resave: false,
   saveUninitialized: false,
   cokie: {
