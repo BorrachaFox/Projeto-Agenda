@@ -33,7 +33,6 @@ class Contato {
     if (!this.body.email && !this.body.telefone) {
       this.errors.push('Pelo menos um contato precisa ser enviado: e-mail ou telefone');
     }
-
   }
 
   cleanUp() {

@@ -11,9 +11,10 @@
         <%- include('includes/messages')  %> 
 
         <div class="row">
-          <div class="col-lg">
+          <div class="col-lg my-5">
             <h4>Faça seu cadastro</h4>
-            <form action="/login/register" method="post">
+
+            <form class="form-register" action="/login/register" method="post">
               <input type="hidden" name="_csrf" value="<%= csrfToken %>"> 
               <div class="form-group mt-3">
                 <label>Seu email</label>
@@ -26,9 +27,10 @@
               <button type="submit" class="btn btn-primary mt-3">Criar conta</button>
             </form>
           </div>
-          <div class="col-lg">
+          <div class="col-lg my-5">
             <h4>Faça seu login</h4>
-            <form action="/login/login" method="post">
+
+            <form class="form-login" action="/login/login" method="post">
               <input type="hidden" name="_csrf" value="<%= csrfToken %>">
               <div class="form-group mt-3">
                 <label>Seu email</label>
